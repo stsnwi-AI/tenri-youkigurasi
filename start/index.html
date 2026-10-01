@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5b4636">
+<title>今日の学びを始める｜陽気ぐらしへの道</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+:root{--ink:#3b3028;--muted:#74675d;--paper:#f7f3ec;--card:#fffdf9;--line:#e5ddd2;--accent:#79583e;--accent2:#c9a46a;--green:#55705d}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;background:var(--paper);line-height:1.8}.wrap{max-width:960px;margin:auto;padding:0 20px}header{background:#5b4636;color:#fff;padding:18px 0}header .brand{font-weight:700;letter-spacing:.08em}.back{max-width:960px;margin:-8px auto 0;padding:0 20px;text-align:right}.back a{color:#ead5b3;font-size:13px;text-decoration:none}.hero{padding:58px 0 46px;background:linear-gradient(180deg,#fffdf9,#f7f3ec)}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;font-size:13px}.hero h1{font-size:clamp(32px,6vw,54px);line-height:1.25;margin:12px 0 18px;letter-spacing:.02em}.lead{font-size:18px;color:var(--muted);max-width:740px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0}.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}.num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700}.step b{display:block;margin-top:8px}section{padding:28px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(50,35,20,.04)}h2{font-size:28px;margin:0 0 10px}h3{margin:0 0 6px}.hint{color:var(--muted);font-size:14px}.lesson{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}.mini{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.mini .label{font-size:13px;color:var(--accent);font-weight:700}.mini strong{display:block;font-size:20px;line-height:1.5;margin-top:5px}.notice{background:#f0e9de;border-left:4px solid var(--accent2);padding:14px 16px;border-radius:8px}.action{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}button,.btn{border:0;border-radius:12px;padding:14px 22px;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--accent);color:#fff}.secondary{background:#ece4d9;color:var(--ink)}.success{background:var(--green);color:#fff}textarea{width:100%;min-height:230px;border:1px solid #d8cec1;border-radius:12px;padding:16px;font:13px/1.7 monospace;background:#fbfaf7;resize:vertical}.chatgpt-guide{background:#f6f1e8;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:16px}.next{display:grid;grid-template-columns:1fr 1fr;gap:16px}.next .mini{height:100%}ol{padding-left:1.4em}footer{padding:40px 0 70px;color:var(--muted);font-size:13px}@media(max-width:700px){.steps,.next,.lesson{grid-template-columns:1fr 1fr}.hero{padding-top:42px}.card{padding:21px}.lead{font-size:16px}.action{display:grid;grid-template-columns:1fr}.action button,.action .btn{width:100%;text-align:center}.wrap{padding-left:14px;padding-right:14px}.back{padding:0 14px}}@media(max-width:480px){.steps{grid-template-columns:1fr 1fr}.step{padding:13px 9px;font-size:14px}.step b{font-size:13px}h2{font-size:24px}.lesson{grid-template-columns:1fr}textarea{min-height:260px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand"><a href="../index.html" style="color:#fff;text-decoration:none">陽気ぐらしへの道</a></div></div><div class="back"><a href="../index.html">← トップページへ戻る</a></div></header>
+<main>
+<div class="hero"><div class="wrap">
+<p class="eyebrow">START HERE / はじめての方へ</p>
+<h1>今日から、<br>陽気ぐらしへの道を始めよう。</h1>
+<p class="lead">毎日の出来事を振り返り、自分の心遣いを見つめ、天理教の教えを手掛かりに考えていく365日の対話型教材です。<br>このページを開くと、カレンダーの日付から今日の学びが自動で表示されます。<br>学びの後は、今日の対話用の文章をコピーしてChatGPTで対話を始めます。</p>
+<div class="steps"><div class="step"><span class="num">1</span><b>今日の学びを<br>読む</b></div><div class="step"><span class="num">2</span><b>対話文を<br>コピー</b></div><div class="step"><span class="num">3</span><b>ChatGPTで<br>対話する</b></div><div class="step"><span class="num">4</span><b>小さな一歩を<br>実践する</b></div></div>
+</div></div>
+
+<section><div class="wrap"><div class="card">
+<p class="eyebrow">STEP 1</p><h2>まず、今日の学びを読みましょう</h2>
+<div class="lesson"><div class="mini"><span class="label">今日</span><strong id="title">今日の学び</strong><p id="meta" class="hint"></p></div><div class="mini"><span class="label">今日のテーマ</span><strong id="theme">—</strong></div><div class="mini"><span class="label">今日の問い</span><strong id="question">—</strong></div><div class="mini"><span class="label">今日の一歩</span><strong id="action">—</strong></div></div>
+<div class="notice"><strong>今日の学びは、正解を当てるためのものではありません。</strong><br>今日の出来事や自分の心を振り返り、「自分はどう感じたのか」「どう考えたのか」を大切にしてください。</div>
+</div></div></section>
+
+<section><div class="wrap"><div class="card">
+<p class="eyebrow">STEP 2</p><h2>初回だけ、ChatGPTに設定します</h2>
+<p>最初に一度だけ、下の設定文をChatGPTにコピーしてください。365日分の教材と対話の進め方を設定します。</p>
+<div class="action"><button class="primary" onclick="copySetupPrompt()">📋 初回設定文をコピー</button><button class="secondary" onclick="selectPrompt()">全文を選択</button><span id="copyStatus" class="hint" aria-live="polite"></span></div>
+<textarea id="prompt" readonly></textarea>
+<p class="hint">※この設定は、同じChatGPTチャットで続けて使うためのものです。</p>
+</div></div></section>
+
+<section><div class="wrap"><div class="card">
+<p class="eyebrow">STEP 3</p><h2>2日目からは、言葉の合図だけ</h2>
+<p>同じChatGPTのチャットを続けて使い、次の合言葉を送るだけで、その日の授業を始められます。</p>
+<div class="notice"><strong>合言葉</strong><br><span id="triggerPhrase">今日、陽気ぐらしへの道を始めよう</span></div>
+<div class="action"><button type="button" class="primary" id="copyTriggerButton">📋 合言葉をコピー</button><a class="btn primary" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPTを開く ↗</a><span id="triggerCopyStatus" class="hint" aria-live="polite"></span></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="card">
+<p class="eyebrow">STEP 4｜毎日の使い方</p><h2>毎日、同じチャットで続けます</h2>
+<p>一度設定したChatGPTのチャットを残しておけば、翌日からは合言葉だけで続けられます。</p>
+<div class="next"><div class="mini"><h3>このページでは</h3><ol><li>今日の学びを読む</li><li>今日の問いを考える</li><li>合言葉を確認する</li></ol></div><div class="mini"><h3>ChatGPTでは</h3><ol><li>同じチャットを開く</li><li>「今日、陽気ぐらしへの道を始めよう」と送る</li><li>AIの問いに自分の言葉で答える</li></ol></div></div>
+<div class="notice" style="margin-top:18px"><strong>大切なのは、AIの答えではなく、自分自身の気づきです。</strong><br>新しいChatGPTチャットを使う場合は、STEP 2の初回設定文をもう一度コピーしてください。</div>
+</div></div></section>
+</main>
+<footer><div class="wrap">陽気ぐらしへの道｜365日 心を見つめるAI教材</div></footer>
+
+<script src="../curriculum.js"></script>
+<script>
+const COURSE_START='2026-09-30';
+let d=0,current=null;
+function localDate(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate());}
+function dateFromISO(iso){const [y,m,day]=iso.split('-').map(Number);return new Date(y,m-1,day);}
+function daysBetween(a,b){return Math.floor((b-a)/86400000);}
+function getDay(){const q=new URLSearchParams(location.search).get('day');if(q!==null&&/^\d+$/.test(q)){const n=Number(q);if(n>=1&&n<=365)return n;}const n=daysBetween(dateFromISO(COURSE_START),localDate())+1;return Math.min(365,Math.max(1,n));}
+function todayLabel(){return new Intl.DateTimeFormat('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'}).format(localDate());}
+function makeSetupPrompt(){return `あなたは「陽気ぐらしへの道」の対話教師です。利用者が自分で考え、自分で選び、自分の生活で実践できるよう支援してください。
+
+【開始日】2026年9月30日（第1日）
+【合言葉】今日、陽気ぐらしへの道を始めよう
+
+【この設定の使い方】
+この設定文は最初の1回だけ読み込んでください。以後、この同じChatGPTチャットで合言葉を受け取ったら、その日の授業を始めてください。後日、合言葉だけが送られても設定文の再入力を求めないでください。新しいチャットの場合は、この設定文をもう一度読み込んでください。
+
+【日付と教材】
+開始日を2026年9月30日＝第1日として、現在の日付から第何日かを計算してください。ユーザーが日付を明示した場合は、その日付を優先してください。以下の365日カリキュラムを使用してください。
+
+【対話ルール】
+1. 最初に今日のテーマと問いを短く示し、質問は一度に一つだけ。
+2. 利用者が答えたら、まず受け止める。
+3. なぜそう思ったのかを一つずつ掘り下げる。
+4. 必要に応じて別の見方・立場・具体例を一つ示す。
+5. 利用者にもう一度考えてもらう。
+6. 天理教の教えとして確認できる内容とAIによる整理・解釈を区別する。
+7. 利用者が詰まったら、質問→ヒント→具体例→説明の順で助ける。
+8. 最後に、利用者自身ができる小さな実践を一つ選べるようにする。
+9. 信仰・寄付・勧誘を誘導しない。病気や不幸の原因を断定しない。
+10. 答えを押しつけず、利用者自身の気づきを大切にする。
+
+【365日カリキュラム】
+${JSON.stringify(CURRICULUM)}
+
+設定が完了したら、「設定が完了しました。次回からは『今日、陽気ぐらしへの道を始めよう』と送ってください。」と短く伝えてください。`;}
+function render(){d=getDay();current=CURRICULUM[d-1];document.getElementById('title').textContent=`第${d}日　${current.title}`;document.getElementById('meta').textContent=`${todayLabel()}｜第${current.week}週｜${current.category}`;document.getElementById('theme').textContent=current.theme;document.getElementById('question').textContent=current.question;document.getElementById('action').textContent=current.action;document.getElementById('prompt').value=makeSetupPrompt();}
+async function copySetupPrompt(){const prompt=makeSetupPrompt();let copied=false;try{await navigator.clipboard.writeText(prompt);copied=true}catch(e){const ta=document.createElement('textarea');ta.value=prompt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{copied=document.execCommand('copy')}catch(_){}ta.remove()}document.getElementById('copyStatus').textContent=copied?'初回設定文をコピーしました。ChatGPTに貼り付けて送信してください。':'コピーできませんでした。下の文章を手動でコピーしてください。';}
+async function copyTrigger(){
+  const t=document.getElementById('triggerPhrase').textContent.trim();
+  const status=document.getElementById('triggerCopyStatus');
+  const done=()=>{if(status)status.textContent='合言葉をコピーしました。';};
+  const fail=()=>{if(status)status.textContent='コピーできませんでした。合言葉を選択して手動でコピーしてください。';};
+  // まず、ボタン操作と同じユーザー操作の中で同期コピーを試します。
+  const ta=document.createElement('textarea');
+  ta.value=t; ta.setAttribute('readonly','');
+  ta.style.position='fixed'; ta.style.left='-9999px'; ta.style.top='0';
+  document.body.appendChild(ta); ta.focus(); ta.select(); ta.setSelectionRange(0,ta.value.length);
+  let copied=false;
+  try{copied=document.execCommand('copy');}catch(e){copied=false;}
+  ta.remove();
+  if(copied){done();return;}
+  // 同期コピーが使えないブラウザでは Clipboard API を試します。
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(t).then(done).catch(fail);
+  }else{fail();}
+}
+
+function selectPrompt(){const t=document.getElementById('prompt');t.focus();t.select();document.getElementById('copyStatus').textContent='文章を選択しました。コピーしてください。';}
+render();
+document.getElementById('copyTriggerButton').addEventListener('click', copyTrigger);
+</script>
+</body></html>

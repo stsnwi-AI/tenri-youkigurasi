@@ -1,0 +1,1 @@
+﻿﻿const CACHE='ai-tendo-v2';const ASSETS=['./','./index.html','./start.html','./start/index.html','./style.css','./curriculum.js','./manifest.webmanifest'];self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));

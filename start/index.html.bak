@@ -1,0 +1,56 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>陽気ぐらしへの道｜365日</title><link rel="stylesheet" href="../style.css"></head><body><main class="lesson"><a href="../index.html">← 陽気ぐらしへの道トップへ</a><p class="eyebrow">365日カリキュラム</p><h1 id="title">今日の学び</h1><div class="meta" id="meta"></div><section class="lesson-card"><h2>今日のテーマ</h2><p id="theme"></p><h2>今日の問い</h2><p id="question"></p><h2>天理教の学び</h2><p id="teaching"></p><h2>今日の一歩</h2><p id="action"></p><hr><h2>AIと対話する</h2><p>この教材では、<strong>ChatGPTをAI教師として利用します。</strong>下のボタンを押すと、今日の対話用プロンプトをコピーしたうえでChatGPTを開けます。ChatGPTが開いたら、できればいつもの同じチャットに貼り付けてください。</p><button class="button" onclick="copyAndOpenChatGPT()">今日のAI対話を始める → コピーしてChatGPTへ</button><p id="copyStatus" class="note"></p><div class="chatgpt-guide"><strong>ChatGPTが開いたら</strong><br>① 同じチャットを開く（初回は新しいチャット）<br>② 入力欄をクリック<br>③ <strong>Ctrl＋V</strong>（スマートフォンは「貼り付け」）<br>④ 送信すると、今日の問いから対話が始まります。</div><p class="note">※WebページからChatGPTの入力欄へ自動入力・自動送信はできないため、最後の「貼り付け」だけ利用者に行ってもらいます。</p><details><summary>コピーされる内容を確認する</summary><pre id="promptPreview" class="prompt-preview"></pre></details><h3>対話の進み方</h3><ol><li>AIが今日の問いを一つ出します。</li><li>あなたの答えを受け止め、理由を一緒に考えます。</li><li>別の視点や具体例を示します。</li><li>もう一度、自分の考えを整理します。</li><li>最後に明日の小さな実践を一つ決めます。</li></ol><p class="note">※AIの説明が天理教の公式見解とは限りません。公式資料に基づく説明とAIの解釈を区別してください。</p><div class="chatgpt-guide"><strong>毎日の使い方</strong><br>このページを毎日開くと、カレンダーの日付から今日の第○日を自動判定します。毎日「次の日」を押す必要はありません。<br><br>ChatGPTでは、<strong>「今日、陽気ぐらしへの道を始めよう」</strong>と入力するか、上のボタンでコピーした開始文を貼り付けてください。同じチャットを続ければ、前日の対話も踏まえて学べます。</div><p class="note">※365日目を終えた後は、第365日の内容を表示します。個別の日を確認したい場合は、URLの <code>?day=1</code> ～ <code>?day=365</code> で指定できます。</p></section></main><script src="../curriculum.js"></script><script>
+const COURSE_START='2026-09-30';
+let d=0;let current=null;
+function localDate(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate());}
+function dateFromISO(iso){const [y,m,day]=iso.split('-').map(Number);return new Date(y,m-1,day);}
+function daysBetween(a,b){return Math.floor((b-a)/86400000);}
+function getDay(){
+ const q=new URLSearchParams(location.search).get('day');
+ if(q!==null && /^\d+$/.test(q)){const n=Number(q);if(n>=1&&n<=365)return n;}
+ const n=daysBetween(dateFromISO(COURSE_START),localDate())+1;
+ return Math.min(365,Math.max(1,n));
+}
+function todayLabel(){return new Intl.DateTimeFormat('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'}).format(localDate());}
+function makePrompt(x){return `あなたは「陽気ぐらしへの道」の対話教師です。利用者が自分で考え、自分で選び、自分の生活で実践できるよう支援してください。
+
+今日：${todayLabel()}／第${d}日・第${x.week}週
+テーマ：${x.title}
+今日のテーマ：${x.theme}
+今日の問い：${x.question}
+天理教の学び：${x.teaching}
+今日の一歩：${x.action}
+
+【対話ルール】
+1. 最初に今日のテーマと問いを短く示し、質問は一度に一つだけ。
+2. 利用者が答えたら、まず受け止める。
+3. なぜそう思ったのかを一つずつ掘り下げる。
+4. 必要に応じて別の見方・立場・具体例を一つ示す。
+5. 利用者にもう一度考えてもらう。
+6. 関連する天理教の教えを説明するときは、公式資料に基づく内容とAIの解釈を区別する。
+7. 質問だけを繰り返さず、短い説明や具体例も適切に入れる。
+8. 利用者が詰まったら「質問→ヒント→具体例→説明」の順で助ける。
+9. 最後に、利用者自身が明日できる小さな実践を一つ選べるようにする。
+10. 信仰・寄付・勧誘を誘導しない。病気や不幸の原因を断定しない。
+11. 今日の授業は、利用者の答えに合わせて「問い→受け止め→深掘り→別の視点→もう一度考える→小さな実践」の順に進める。
+
+では、今日の授業を始めてください。最初は短く問いかけ、私の答えを待ってください。`;}
+function render(){
+ d=getDay();current=CURRICULUM[d-1];
+ document.getElementById('title').textContent=`第${d}日　${current.title}`;
+ document.getElementById('meta').textContent=`${todayLabel()}｜第${current.week}週｜${current.category}`;
+ document.getElementById('theme').textContent=current.theme;
+ document.getElementById('question').textContent=current.question;
+ document.getElementById('teaching').textContent=current.teaching;
+ document.getElementById('action').textContent=current.action;
+ document.getElementById('promptPreview').textContent=makePrompt(current);
+ document.getElementById('copyStatus').textContent='';
+ if(new URLSearchParams(location.search).has('day')){} else history.replaceState(null,'',location.pathname);
+}
+async function copyAndOpenChatGPT(){
+ const prompt=makePrompt(current);let copied=false;
+ try{await navigator.clipboard.writeText(prompt);copied=true}catch(e){const ta=document.createElement('textarea');ta.value=prompt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{copied=document.execCommand('copy')}catch(_){}ta.remove()}
+ document.getElementById('copyStatus').textContent=copied?'今日の開始文をコピーしました。ChatGPTで貼り付けて送信してください。':'コピーできませんでした。下の「コピーされる内容」を手動でコピーしてください。';
+ window.open('https://chatgpt.com/','_blank','noopener,noreferrer');
+}
+render();
+</script></body></html>
