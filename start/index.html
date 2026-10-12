@@ -1,120 +1,27 @@
-<!doctype html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#5b4636">
-<title>今日の学びを始める｜陽気ぐらしへの道</title>
-<link rel="stylesheet" href="../style.css">
-<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
-<style>
-:root{--ink:#3b3028;--muted:#74675d;--paper:#f7f3ec;--card:#fffdf9;--line:#e5ddd2;--accent:#79583e;--accent2:#c9a46a;--green:#55705d}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;background:var(--paper);line-height:1.8}.wrap{max-width:960px;margin:auto;padding:0 20px}header{background:#5b4636;color:#fff;padding:18px 0}header .brand{font-weight:700;letter-spacing:.08em}.back{max-width:960px;margin:-8px auto 0;padding:0 20px;text-align:right}.back a{color:#ead5b3;font-size:13px;text-decoration:none}.hero{padding:58px 0 46px;background:linear-gradient(180deg,#fffdf9,#f7f3ec)}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;font-size:13px}.hero h1{font-size:clamp(32px,6vw,54px);line-height:1.25;margin:12px 0 18px;letter-spacing:.02em}.lead{font-size:18px;color:var(--muted);max-width:740px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0}.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}.num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700}.step b{display:block;margin-top:8px}section{padding:28px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(50,35,20,.04)}h2{font-size:28px;margin:0 0 10px}h3{margin:0 0 6px}.hint{color:var(--muted);font-size:14px}.lesson{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}.mini{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.mini .label{font-size:13px;color:var(--accent);font-weight:700}.mini strong{display:block;font-size:20px;line-height:1.5;margin-top:5px}.notice{background:#f0e9de;border-left:4px solid var(--accent2);padding:14px 16px;border-radius:8px}.action{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}button,.btn{border:0;border-radius:12px;padding:14px 22px;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--accent);color:#fff}.secondary{background:#ece4d9;color:var(--ink)}.success{background:var(--green);color:#fff}textarea{width:100%;min-height:230px;border:1px solid #d8cec1;border-radius:12px;padding:16px;font:13px/1.7 monospace;background:#fbfaf7;resize:vertical}.chatgpt-guide{background:#f6f1e8;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:16px}.next{display:grid;grid-template-columns:1fr 1fr;gap:16px}.next .mini{height:100%}ol{padding-left:1.4em}footer{padding:40px 0 70px;color:var(--muted);font-size:13px}@media(max-width:700px){.steps,.next,.lesson{grid-template-columns:1fr 1fr}.hero{padding-top:42px}.card{padding:21px}.lead{font-size:16px}.action{display:grid;grid-template-columns:1fr}.action button,.action .btn{width:100%;text-align:center}.wrap{padding-left:14px;padding-right:14px}.back{padding:0 14px}}@media(max-width:480px){.steps{grid-template-columns:1fr 1fr}.step{padding:13px 9px;font-size:14px}.step b{font-size:13px}h2{font-size:24px}.lesson{grid-template-columns:1fr}textarea{min-height:260px}}
-</style>
-</head>
-<body>
-<header><div class="wrap"><div class="brand"><a href="../index.html" style="color:#fff;text-decoration:none">陽気ぐらしへの道</a></div></div><div class="back"><a href="../index.html">← トップページへ戻る</a></div></header>
-<main>
-<div class="hero"><div class="wrap">
-<p class="eyebrow">START HERE / はじめての方へ</p>
-<h1>今日から、<br>陽気ぐらしへの道を始めよう。</h1>
-<p class="lead">毎日の出来事を振り返り、自分の心遣いを見つめ、天理教の教えを手掛かりに考えていく365日の対話型教材です。<br>このページを開くと、カレンダーの日付から今日の学びが自動で表示されます。<br>学びの後は、今日の対話用の文章をコピーしてChatGPTで対話を始めます。</p>
-<div class="steps"><div class="step"><span class="num">1</span><b>今日の学びを<br>読む</b></div><div class="step"><span class="num">2</span><b>対話文を<br>コピー</b></div><div class="step"><span class="num">3</span><b>ChatGPTで<br>対話する</b></div><div class="step"><span class="num">4</span><b>小さな一歩を<br>実践する</b></div></div>
-</div></div>
-
-<section><div class="wrap"><div class="card">
-<p class="eyebrow">STEP 1</p><h2>まず、今日の学びを読みましょう</h2>
-<div class="lesson"><div class="mini"><span class="label">今日</span><strong id="title">今日の学び</strong><p id="meta" class="hint"></p></div><div class="mini"><span class="label">今日のテーマ</span><strong id="theme">—</strong></div><div class="mini"><span class="label">今日の問い</span><strong id="question">—</strong></div><div class="mini"><span class="label">今日の一歩</span><strong id="action">—</strong></div></div>
-<div class="notice"><strong>今日の学びは、正解を当てるためのものではありません。</strong><br>今日の出来事や自分の心を振り返り、「自分はどう感じたのか」「どう考えたのか」を大切にしてください。</div>
-</div></div></section>
-
-<section><div class="wrap"><div class="card">
-<p class="eyebrow">STEP 2</p><h2>初回だけ、ChatGPTに設定します</h2>
-<p>最初に一度だけ、下の設定文をChatGPTにコピーしてください。365日分の教材と対話の進め方を設定します。</p>
-<div class="action"><button class="primary" onclick="copySetupPrompt()">📋 初回設定文をコピー</button><button class="secondary" onclick="selectPrompt()">全文を選択</button><span id="copyStatus" class="hint" aria-live="polite"></span></div>
-<textarea id="prompt" readonly></textarea>
-<p class="hint">※この設定は、同じChatGPTチャットで続けて使うためのものです。</p>
-</div></div></section>
-
-<section><div class="wrap"><div class="card">
-<p class="eyebrow">STEP 3</p><h2>2日目からは、言葉の合図だけ</h2>
-<p>同じChatGPTのチャットを続けて使い、次の合言葉を送るだけで、その日の授業を始められます。</p>
-<div class="notice"><strong>合言葉</strong><br><span id="triggerPhrase">今日、陽気ぐらしへの道を始めよう</span></div>
-<div class="action"><button type="button" class="primary" id="copyTriggerButton">📋 合言葉をコピー</button><a class="btn primary" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPTを開く ↗</a><span id="triggerCopyStatus" class="hint" aria-live="polite"></span></div>
-</div></div></section>
-
-<section><div class="wrap"><div class="card">
-<p class="eyebrow">STEP 4｜毎日の使い方</p><h2>毎日、同じチャットで続けます</h2>
-<p>一度設定したChatGPTのチャットを残しておけば、翌日からは合言葉だけで続けられます。</p>
-<div class="next"><div class="mini"><h3>このページでは</h3><ol><li>今日の学びを読む</li><li>今日の問いを考える</li><li>合言葉を確認する</li></ol></div><div class="mini"><h3>ChatGPTでは</h3><ol><li>同じチャットを開く</li><li>「今日、陽気ぐらしへの道を始めよう」と送る</li><li>AIの問いに自分の言葉で答える</li></ol></div></div>
-<div class="notice" style="margin-top:18px"><strong>大切なのは、AIの答えではなく、自分自身の気づきです。</strong><br>新しいChatGPTチャットを使う場合は、STEP 2の初回設定文をもう一度コピーしてください。</div>
-</div></div></section>
-</main>
-<footer><div class="wrap">陽気ぐらしへの道｜365日 心を見つめるAI教材</div></footer>
-
-<script src="../curriculum.js"></script>
-<script>
-const COURSE_START='2026-09-30';
-let d=0,current=null;
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#5b4636"><title>今日の学びを始める｜陽気ぐらしへの道</title><link rel="stylesheet" href="../style.css"><link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png"><link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png"><style>
+:root{--ink:#3b3028;--muted:#74675d;--paper:#f7f3ec;--card:#fffdf9;--line:#e5ddd2;--accent:#79583e;--accent2:#c9a46a;--green:#55705d}*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",sans-serif;background:var(--paper);line-height:1.8}.wrap{max-width:960px;margin:auto;padding:0 20px}header{background:#5b4636;color:#fff;padding:18px 0}.brand{font-weight:700;letter-spacing:.08em}.back{text-align:right}.back a{color:#ead5b3;font-size:13px;text-decoration:none}.hero{padding:46px 0 30px;background:linear-gradient(180deg,#fffdf9,#f7f3ec)}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.1em;font-size:13px}.hero h1{font-size:clamp(30px,6vw,48px);line-height:1.3;margin:10px 0}.lead{color:var(--muted);font-size:16px;max-width:760px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:25px 0}.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}.num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700}.step b{display:block;margin-top:7px}section{padding:20px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(50,35,20,.04)}h2{font-size:26px;margin:0 0 10px}h3{margin:0 0 6px}.hint{color:var(--muted);font-size:14px}.lesson{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}.mini{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.mini .label{font-size:13px;color:var(--accent);font-weight:700}.mini strong{display:block;font-size:20px;line-height:1.5;margin-top:5px}.notice{background:#f0e9de;border-left:4px solid var(--accent2);padding:14px 16px;border-radius:8px}.action{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}button,.btn{border:0;border-radius:12px;padding:14px 22px;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--accent);color:#fff}.secondary{background:#ece4d9;color:var(--ink)}textarea{width:100%;min-height:230px;border:1px solid #d8cec1;border-radius:12px;padding:16px;font:13px/1.7 monospace;background:#fbfaf7;resize:vertical}.next{display:grid;grid-template-columns:1fr 1fr;gap:16px}ol{padding-left:1.4em}footer{padding:40px 0 70px;color:var(--muted);font-size:13px}.roadmap{background:linear-gradient(135deg,#fffefb,#f4ecdf);border:2px solid #d6c3a6;border-radius:18px;padding:24px;margin:20px 0}.road-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}.road-head strong{font-size:25px}.progress{height:12px;background:#e4d9c9;border-radius:20px;overflow:hidden;margin:12px 0 5px}.progress>div{height:100%;background:linear-gradient(90deg,#92704d,#55705d);width:0}.road-grid{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:10px;margin-top:18px}.road-week{background:#fff;border:1px solid #e3d7c5;border-radius:12px;padding:13px}.road-week.current{border:2px solid #79583e;background:#fffaf2}.road-week small{display:block;color:#74675d}.road-week b{display:block;font-size:18px;margin:5px 0}.road-week p{font-size:13px;margin:0;color:#74675d}.road-date{font-size:13px;color:#74675d}.road-note{font-size:13px;color:#74675d;margin-top:12px}@media(max-width:700px){.steps,.next,.lesson{grid-template-columns:1fr 1fr}.card{padding:20px}.action{display:grid}.action button,.action .btn{width:100%;text-align:center}.wrap{padding:0 14px}}@media(max-width:520px){.steps{grid-template-columns:1fr 1fr}.lesson,.next,.road-grid{grid-template-columns:1fr}.roadmap{padding:16px}.road-week{padding:10px 13px}.road-week b{font-size:16px}h2{font-size:23px}}
+</style></head><body><header><div class="wrap"><div class="brand"><a href="../index.html" style="color:#fff;text-decoration:none">陽気ぐらしへの道</a></div><div class="back"><a href="../index.html">← トップページへ戻る</a></div></div></header><main><div class="hero"><div class="wrap"><p class="eyebrow">START HERE / はじめての方へ</p><h1>今日から、<br>陽気ぐらしへの道を始めよう。</h1><p class="lead">毎日の出来事を振り返り、自分の心遣いを見つめ、天理教の教えを手掛かりに考えていく365日の対話型教材です。今日の位置と前後の学びを確認してから、ChatGPTで対話を始めましょう。</p><div class="steps"><div class="step"><span class="num">1</span><b>学びの位置を<br>確認</b></div><div class="step"><span class="num">2</span><b>今日の学びを<br>読む</b></div><div class="step"><span class="num">3</span><b>ChatGPTで<br>対話する</b></div><div class="step"><span class="num">4</span><b>小さな一歩を<br>実践する</b></div></div></div></div>
+<section><div class="wrap"><div class="roadmap" aria-label="365日の学びの現在地"><p class="eyebrow">学びの道しるべ｜365日カリキュラム</p><div class="road-head"><strong id="road-day">第—日 ／ 365日</strong><span id="road-date" class="road-date"></span></div><div id="road-count" class="hint">第—週</div><div class="progress" role="progressbar" aria-label="365日の進捗" aria-valuemin="0" aria-valuemax="365" aria-valuenow="0" id="road-progress"><div id="road-bar"></div></div><div id="road-percent" class="hint"></div><div class="road-grid"><div class="road-week"><small>← 前週の学び</small><b id="road-prev">—</b><p id="road-prev-sub"></p></div><div class="road-week current"><small>● 今週の学び</small><b id="road-now">—</b><p id="road-now-sub"></p></div><div class="road-week"><small>次週の学び →</small><b id="road-next">—</b><p id="road-next-sub"></p></div></div><p class="road-note">今日の正式テーマを軸に、対話で広がった内容は「発展的な学び」として区別します。</p></div></div></section>
+<section><div class="wrap"><div class="card"><p class="eyebrow">STEP 1</p><h2>まず、今日の学びを読みましょう</h2><div class="lesson"><div class="mini"><span class="label">今日</span><strong id="title">今日の学び</strong><p id="meta" class="hint"></p></div><div class="mini"><span class="label">今日のテーマ</span><strong id="theme">—</strong></div><div class="mini"><span class="label">今日の問い</span><strong id="question">—</strong></div><div class="mini"><span class="label">今日の一歩</span><strong id="action">—</strong></div></div><div class="notice"><strong>今日の学びは、正解を当てるためのものではありません。</strong><br>自分はどう感じたのか、どう考えたのかを大切にしてください。</div></div></div></section>
+<section><div class="wrap"><div class="card"><p class="eyebrow">STEP 2</p><h2>初回設定・途中からの更新</h2><p>初めて使う方は「初回設定文」をChatGPTに送信してください。すでに同じチャットで学習している方は、<strong>「更新用の設定文」だけをそのチャットに送信</strong>してください。新しいチャットを作る必要はありません。</p><div class="action"><button class="primary" onclick="copySetupPrompt()">📋 初回設定文をコピー</button><button class="secondary" onclick="copyUpdatePrompt()">📋 継続利用者用・更新文をコピー</button><button class="secondary" onclick="selectPrompt()">全文を選択</button></div><p id="copyStatus" class="hint" aria-live="polite"></p><textarea id="prompt" readonly></textarea><p class="hint">※更新文は進行方法だけを変更します。既存のチャット履歴を削除する操作ではありません。別チャットでは過去の対話内容は自動移行されません。</p></div></div></section>
+<section><div class="wrap"><div class="card"><p class="eyebrow">STEP 3</p><h2>2日目からは、言葉の合図だけ</h2><p>同じChatGPTチャットで次の合言葉を送ると、その日の授業を始められます。</p><div class="notice"><strong>合言葉</strong><br><span id="triggerPhrase">今日、陽気ぐらしへの道を始めよう</span></div><div class="action"><button type="button" class="primary" id="copyTriggerButton">📋 合言葉をコピー</button><a class="btn primary" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPTを開く ↗</a></div><span id="triggerCopyStatus" class="hint" aria-live="polite"></span></div></div></section>
+<section><div class="wrap"><div class="card"><p class="eyebrow">STEP 4｜毎日の使い方</p><h2>毎日、同じチャットで続けます</h2><div class="next"><div class="mini"><h3>このページでは</h3><ol><li>学びの道しるべを確認する</li><li>今日のテーマと問いを読む</li><li>合言葉を確認する</li></ol></div><div class="mini"><h3>ChatGPTでは</h3><ol><li>同じチャットを開く</li><li>合言葉を送る</li><li>一つずつ問いに答え、今日の一歩を選ぶ</li></ol></div></div><div class="notice" style="margin-top:18px"><strong>大切なのは、AIの答えではなく、自分自身の気づきです。</strong><br>新しいチャットで始める場合は初回設定文を再入力してください。</div></div></div></section></main><footer><div class="wrap">陽気ぐらしへの道｜365日 心を見つめるAI教材</div></footer>
+<script src="../curriculum.js"></script><script>
+const COURSE_START='2026-09-30';let d=0,current=null;
 function localDate(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate());}
 function dateFromISO(iso){const [y,m,day]=iso.split('-').map(Number);return new Date(y,m-1,day);}
-function daysBetween(a,b){return Math.floor((b-a)/86400000);}
-function getDay(){const q=new URLSearchParams(location.search).get('day');if(q!==null&&/^\d+$/.test(q)){const n=Number(q);if(n>=1&&n<=365)return n;}const n=daysBetween(dateFromISO(COURSE_START),localDate())+1;return Math.min(365,Math.max(1,n));}
+function daysBetween(a,b){return Math.round((Date.UTC(b.getFullYear(),b.getMonth(),b.getDate())-Date.UTC(a.getFullYear(),a.getMonth(),a.getDate()))/86400000);}
+function getDay(){const q=new URLSearchParams(location.search).get('day');if(q!==null&&/^\d+$/.test(q)){const n=Number(q);if(n>=1&&n<=365)return n;}return Math.min(365,Math.max(1,daysBetween(dateFromISO(COURSE_START),localDate())+1));}
 function todayLabel(){return new Intl.DateTimeFormat('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'}).format(localDate());}
-function makeSetupPrompt(){return `あなたは「陽気ぐらしへの道」の対話教師です。利用者が自分で考え、自分で選び、自分の生活で実践できるよう支援してください。
-
-【開始日】2026年9月30日（第1日）
-【合言葉】今日、陽気ぐらしへの道を始めよう
-
-【この設定の使い方】
-この設定文は最初の1回だけ読み込んでください。以後、この同じChatGPTチャットで合言葉を受け取ったら、その日の授業を始めてください。後日、合言葉だけが送られても設定文の再入力を求めないでください。新しいチャットの場合は、この設定文をもう一度読み込んでください。
-
-【日付と教材】
-開始日を2026年9月30日＝第1日として、現在の日付から第何日かを計算してください。ユーザーが日付を明示した場合は、その日付を優先してください。以下の365日カリキュラムを使用してください。
-
-【対話ルール】
-1. 最初に今日のテーマと問いを短く示し、質問は一度に一つだけ。
-2. 利用者が答えたら、まず受け止める。
-3. なぜそう思ったのかを一つずつ掘り下げる。
-4. 必要に応じて別の見方・立場・具体例を一つ示す。
-5. 利用者にもう一度考えてもらう。
-6. 天理教の教えとして確認できる内容とAIによる整理・解釈を区別する。
-7. 利用者が詰まったら、質問→ヒント→具体例→説明の順で助ける。
-8. 最後に、利用者自身ができる小さな実践を一つ選べるようにする。
-9. 信仰・寄付・勧誘を誘導しない。病気や不幸の原因を断定しない。
-10. 答えを押しつけず、利用者自身の気づきを大切にする。
-
-【365日カリキュラム】
-${JSON.stringify(CURRICULUM)}
-
-設定が完了したら、「設定が完了しました。次回からは『今日、陽気ぐらしへの道を始めよう』と送ってください。」と短く伝えてください。`;}
-function render(){d=getDay();current=CURRICULUM[d-1];document.getElementById('title').textContent=`第${d}日　${current.title}`;document.getElementById('meta').textContent=`${todayLabel()}｜第${current.week}週｜${current.category}`;document.getElementById('theme').textContent=current.theme;document.getElementById('question').textContent=current.question;document.getElementById('action').textContent=current.action;document.getElementById('prompt').value=makeSetupPrompt();}
-async function copySetupPrompt(){const prompt=makeSetupPrompt();let copied=false;try{await navigator.clipboard.writeText(prompt);copied=true}catch(e){const ta=document.createElement('textarea');ta.value=prompt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();try{copied=document.execCommand('copy')}catch(_){}ta.remove()}document.getElementById('copyStatus').textContent=copied?'初回設定文をコピーしました。ChatGPTに貼り付けて送信してください。':'コピーできませんでした。下の文章を手動でコピーしてください。';}
-async function copyTrigger(){
-  const t=document.getElementById('triggerPhrase').textContent.trim();
-  const status=document.getElementById('triggerCopyStatus');
-  const done=()=>{if(status)status.textContent='合言葉をコピーしました。';};
-  const fail=()=>{if(status)status.textContent='コピーできませんでした。合言葉を選択して手動でコピーしてください。';};
-  // まず、ボタン操作と同じユーザー操作の中で同期コピーを試します。
-  const ta=document.createElement('textarea');
-  ta.value=t; ta.setAttribute('readonly','');
-  ta.style.position='fixed'; ta.style.left='-9999px'; ta.style.top='0';
-  document.body.appendChild(ta); ta.focus(); ta.select(); ta.setSelectionRange(0,ta.value.length);
-  let copied=false;
-  try{copied=document.execCommand('copy');}catch(e){copied=false;}
-  ta.remove();
-  if(copied){done();return;}
-  // 同期コピーが使えないブラウザでは Clipboard API を試します。
-  if(navigator.clipboard && window.isSecureContext){
-    navigator.clipboard.writeText(t).then(done).catch(fail);
-  }else{fail();}
-}
-
-function selectPrompt(){const t=document.getElementById('prompt');t.focus();t.select();document.getElementById('copyStatus').textContent='文章を選択しました。コピーしてください。';}
-render();
-document.getElementById('copyTriggerButton').addEventListener('click', copyTrigger);
-</script>
-</body></html>
+function weekInfo(w){if(w<1||w>53)return null;const x=CURRICULUM.find(v=>v.week===w);return x?{category:x.category,title:x.title}:null;}
+function setWeek(prefix,w){const x=weekInfo(w);document.getElementById(prefix).textContent=x?x.category:(w<1?'学びの開始前':'全課程修了');document.getElementById(prefix+'-sub').textContent=x?x.title:'';}
+const teachingRules=`【授業開始時の道しるべ（必須）】\n授業の冒頭に、今日の日付・第何日／365日・第何週を示し、前週／今週／次週の正式テーマと今週の位置を簡潔に表示する。開始日は2026年9月30日を第1日とする。週は7日単位。第1週に前週はなく、最終週に次週はない。テーマは以下の365日データから取得し、推測しない。\n\n【対話の進め方】\n1. 前回の学びや小さな実践を短く振り返る（初回は省略）。\n2. 今日の正式テーマと問いを示す。質問は一度に一つだけ。\n3. 天理教の教えを扱うときは、原典・出典を確認できる引用とAIの解釈を区別する。出典未確認の言葉を教典の原文と断定しない。\n4. 今日の一言・朗読は大きく太字で独立して示す。出典が未確認なら引用ではなく「今日の対話の言葉」と明示する。\n5. 答えを受け止め、理由を一つずつ掘り下げ、必要に応じて別の視点を示す。押しつけない。\n6. 正式テーマから広がった話題は「発展的な学び」として区別する。正式な週テーマを勝手に前倒ししない。\n7. 自分の生活に置き換え、小さな実践を一つ選び、最後に「今日の学び」を整理する。\n8. 信仰・寄付・勧誘を誘導しない。病気・不幸の原因を断定しない。\n9. 十分に考えて答えている場合は質問を増やさない。\n10. ユーザーが明示的に進行日・学習日を指定した場合はその指定を優先する。\n\n【心のほこりを見つめる時間（必要な場合のみ）】\n1. 毎回の義務にはしない。対話中の利用者自身の言葉に、怒り・焦り・恨み・欲・思い上がりなど、自分の心遣いを振り返る契機がある場合に限り、授業の終盤で短く提案する。AIは発言傾向から人格・信仰・徳性を判定しない。\n2. 天理教の「心のほこり」「八つのほこり」や朝夕のおつとめに関わる省察の考え方を参考にしてよい。ただし、原典の引用・公式説明・AIによる応用を明確に分け、未確認の文言を教典の原文として提示しない。授業内の振り返りはおつとめそのものの代替ではない。\n3. 「あなたにほこりがある」と断定せず、「こんな気持ちが生まれることはありますか」「別の見方はできそうですか」など、本人が自由に答えられる問いを一つだけ示す。\n4. 利用者が否定したり、望まなかったりしたら追及しない。過度な罪悪感や自己否定を促さず、他者からの不当な扱いや病気・事故・不幸を本人の心遣いのせいにしない。\n5. 振り返った後は、明日どのように心を使いたいかを本人が選べるようにする。感謝や喜びを振り返る日も大切にする。\n6. この振り返りは、利用者の内心を記録・採点・診断するために行わない。`;
+function makeSetupPrompt(){return `あなたは「陽気ぐらしへの道」の穏やかで公平な対話教師です。利用者が自分で考え、選び、生活で実践することを支援してください。\n【開始日】2026年9月30日（第1日）\n【合言葉】今日、陽気ぐらしへの道を始めよう\n【利用方法】初回のみ設定し、以後は同じChatGPTチャットで合言葉を受け取って授業を始める。チャットを変えた場合、過去の対話記録は自動移行されない。\n${teachingRules}\n【365日カリキュラム】\n${JSON.stringify(CURRICULUM)}\n設定完了後は、設定完了と合言葉を短く案内してください。`}
+function makeUpdatePrompt(){return `【陽気ぐらしへの道｜継続利用者用 設定更新】\nこれは新規登録・学習開始のやり直しではありません。このチャットでこれまで学んだ内容、利用者自身の考え、実践、進行日、会話履歴を尊重し、継続してください。以前の設定のうち授業進行・表示方式だけを次のルールに更新してください。開始日は従来どおり2026年9月30日＝第1日です。\n${teachingRules}\n【週別テーマ（正式な365日教材に基づく）】\n${JSON.stringify([...new Map(CURRICULUM.map(x=>[x.week,{week:x.week,category:x.category,title:x.title}])).values()])}\n【注意】これはChatGPTへの文章による設定更新であり、過去のチャットの内容を消去する指示ではありません。以前のチャットを使い続けてください。新しいチャットに貼り付けた場合、過去の対話履歴は復元されません。\n更新を理解したら、学習は初日からやり直さず継続すると短く返してください。`}
+function render(){if(!Array.isArray(CURRICULUM)||CURRICULUM.length<365){document.getElementById('road-day').textContent='教材データを読み込めません';return;}d=getDay();current=CURRICULUM[d-1];document.getElementById('title').textContent=`第${d}日　${current.title}`;document.getElementById('meta').textContent=`${todayLabel()}｜第${current.week}週｜${current.category}`;document.getElementById('theme').textContent=current.theme;document.getElementById('question').textContent=current.question;document.getElementById('action').textContent=current.action;document.getElementById('road-day').textContent=`第${d}日 ／ 365日`;document.getElementById('road-date').textContent=todayLabel();document.getElementById('road-count').textContent=`第${current.week}週`;document.getElementById('road-bar').style.width=(d/365*100).toFixed(2)+'%';document.getElementById('road-percent').textContent=`全体の ${(d/365*100).toFixed(1)}%`;document.getElementById('road-progress').setAttribute('aria-valuenow',d);setWeek('road-prev',current.week-1);setWeek('road-now',current.week);setWeek('road-next',current.week+1);document.getElementById('prompt').value=makeSetupPrompt();}
+async function copyText(value,status){let copied=false;try{await navigator.clipboard.writeText(value);copied=true}catch(e){const ta=document.createElement('textarea');ta.value=value;ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.focus();ta.select();try{copied=document.execCommand('copy')}catch(_){}ta.remove()}document.getElementById(status).textContent=copied?'コピーしました。ChatGPTの同じチャットに貼り付けて送信してください。':'コピーできませんでした。表示された文章を手動でコピーしてください。';}
+function copySetupPrompt(){document.getElementById('prompt').value=makeSetupPrompt();copyText(makeSetupPrompt(),'copyStatus')}
+function copyUpdatePrompt(){document.getElementById('prompt').value=makeUpdatePrompt();copyText(makeUpdatePrompt(),'copyStatus')}
+function selectPrompt(){const t=document.getElementById('prompt');t.focus();t.select();document.getElementById('copyStatus').textContent='文章を選択しました。コピーしてください。'}
+document.getElementById('copyTriggerButton').addEventListener('click',()=>copyText(document.getElementById('triggerPhrase').textContent.trim(),'triggerCopyStatus'));render();
+</script></body></html>
